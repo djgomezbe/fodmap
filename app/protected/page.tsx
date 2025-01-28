@@ -1,6 +1,6 @@
 import FetchDataSteps from "@/components/tutorial/fetch-data-steps";
 import { createClient } from "@/utils/supabase/server";
-import { InfoIcon } from "lucide-react";
+import { ChartPie, InfoIcon } from "lucide-react";
 import { redirect } from "next/navigation";
 import Image from "next/image";
 
@@ -41,6 +41,22 @@ export default async function ProtectedPage() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section>
+        <h1 className="text-2xl font-semibold text-green-600 sm:text-3xl">
+          Waarom Fodmap-Tracker Dé Keuze is voor Jouw Gezondheid
+        </h1>
+        <p>
+          Heb je al ervaring met andere FODMAP-apps, maar voelt het alsof er
+          altijd nét iets mist? Ontdek waarom Fodmap Tracker een gamechanger is
+          en jouw nieuwe bondgenoot kan worden in je FODMAP-traject:
+        </p>
+        <ul>
+          <li>Volledig Gepersonaliseerd</li>
+          <li></li>
+          <li></li>
+        </ul>
       </section>
 
       <section>

@@ -17,7 +17,7 @@ export default async function ProtectedPage() {
 
   return (
     <main>
-      <section>
+      <section className="m-5 p-5">
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
             <div>
@@ -43,20 +43,141 @@ export default async function ProtectedPage() {
         </div>
       </section>
 
-      <section>
-        <h1 className="text-2xl font-semibold text-green-600 sm:text-3xl">
-          Waarom Fodmap-Tracker Dé Keuze is voor Jouw Gezondheid
-        </h1>
-        <p>
-          Heb je al ervaring met andere FODMAP-apps, maar voelt het alsof er
-          altijd nét iets mist? Ontdek waarom Fodmap Tracker een gamechanger is
-          en jouw nieuwe bondgenoot kan worden in je FODMAP-traject:
-        </p>
-        <ul>
-          <li>Volledig Gepersonaliseerd</li>
-          <li></li>
-          <li></li>
-        </ul>
+      <section className="flex max-w-screen justify-center text-center">
+        <div className="p-5 m-2">
+          <h1 className="text-xl font-semibold text-green-600 sm:text-3xl">
+            Waarom Fodmap-Tracker Dé Keuze is voor Jouw Gezondheid
+          </h1>
+          <p>
+            Heb je al ervaring met andere FODMAP-apps, maar voelt het alsof er
+            altijd nét iets mist? Ontdek waarom Fodmap Tracker een gamechanger
+            is en jouw nieuwe bondgenoot kan worden in je FODMAP-traject:
+          </p>
+          <ul className="text-green-600 uppercase">
+            <li>Volledig Gepersonaliseerd</li>
+            <li>Meer controle over je dieet</li>
+            <li>Gebruiksvriendelijk</li>
+            <li>Innovatieve features</li>
+            <li>Betrouwbaarheid en zorg</li>
+          </ul>
+          <p>
+            🌿 Stap vandaag nog over naar Fodmap Tracker en ervaar zelf waarom
+            zoveel mensen ons uniek noemen. Samen helpen we je klachten te
+            verminderen en je welzijn te verbeteren. Download nu en ontdek de
+            nieuwe standaard in FODMAP-dieetbegeleiding! Heb je vragen of wil je
+            meer weten? Laat het ons weten! 💚
+          </p>
+        </div>
+      </section>
+
+      <section className="text-center">
+        <div className="flex justify-start">
+          <div className="m-5 p-5">
+            <div className="m-5">
+              <h1 className="text-xl font-semibold text-green-600 uppercase">
+                Creëer en Deel Jouw Eigen FODMAP-vriendelijke recepten.
+              </h1>
+              <p>
+                Bij Fodmap-tracker geloven we dat een FODMAP-dieet niet saai of
+                beperkend hoeft te zijn. Daarom hebben we een speciale functie
+                ontwikkeld waarmee je zelf jouw favoriete FODMAP-vriendelijke
+                recepten kunt toevoegen, beheren en delen met anderen. Dit is
+                exclusief beschikbaar voor onze Premium gebruikers, zodat je
+                jouw dieet nog persoonlijker en smaakvoller kunt maken.
+              </p>
+            </div>
+            <div>
+              <h2 className="text-green-600 font-bold uppercase">
+                Zelf Recepten Toevoegen
+              </h2>
+              <p>
+                Ondanks onze unieke database van heerlijke recepten kun je
+                eenvoudig jouw eigen creaties toevoegen. Of het nu gaat om een
+                ontbijt, lunch, diner of een heerlijk tussendoortje.
+              </p>
+              <h2 className="text-green-600 font-bold uppercase m-2">
+                je kunt al jouw recepten opslaan en categoriseren op basis van
+                de fase van het FODMAP-dieet waarin je je bevindt
+              </h2>
+            </div>
+            <div>
+              <div>
+                <div>
+                  <ul className="font-bold p-5 m-5">
+                    <label className="text-green-600">Eleminatie-fase</label>
+                    <li>
+                      Voeg recepten toe die strikt laag in FODMAPs zijn, perfect
+                      voor de eerste fase van het dieet.
+                    </li>
+                    <label className="text-green-600">
+                      Herintroductie-fase
+                    </label>
+                    <li>
+                      Creëer recepten die specifiek zijn afgestemd op de
+                      FODMAP-categorie die je op dit moment test.
+                    </li>
+                    <label className="text-green-600">
+                      Personalisatie-fase
+                    </label>
+                    <li>
+                      Bewaar recepten die zijn afgestemd op jouw persoonlijke
+                      toleranties en voorkeuren.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <h2 className="text-green-600 font-bold uppercase">
+              Sorteer op FODMAP-categorie
+            </h2>
+            <p>
+              Bij het toevoegen van een recept kun je aangeven welke
+              Fodmap-categorie het recept bevat. Dit is vooral handig tijdens de
+              herintroductiefase, zodat je gemakkelijk kunt bijhouden welke
+              ingrediënten je aan het testen bent.{" "}
+            </p>
+          </div>
+          <div className="m-5 p-5">
+            <ul className="font-bold p-5 m-5">
+              <label className="text-green-600 font-bold uppercase">
+                De categorieën zijn:
+              </label>
+              <li>Fructanen</li>
+              <li>Lactose</li>
+              <li>Mannitol</li>
+              <li>Sorbitol</li>
+              <li>Galacto-oligosacchariden</li>
+              <li>Fructose</li>
+            </ul>
+            <h2 className="text-green-600 font-bold uppercase">
+              Ingrediënt van de Week
+            </h2>
+            <p>
+              Elke week kun je een nieuw ingrediënt toevoegen aan jouw dieet,
+              vooral tijdens de herintroductiefase. Onze tool maakt het mogelijk
+              om recepten te creëren die dit specifieke ingrediënt bevatten,
+              zodat je op een smakelijke en gevarieerde manier kunt testen hoe
+              jouw lichaam reageert. Bijvoorbeeld: als je deze week kikkererwten
+              introduceert, kun je een heerlijke hummus of een
+              kikkererwtensalade toevoegen aan jouw receptencollectie.
+            </p>
+            <h2 className="text-green-600 font-bold uppercase">
+              Delen en Ontdekken
+            </h2>
+            <p>
+              Als Premium gebruiker kun je jouw recepten ook delen met de
+              community. Op deze manier inspireer je anderen en ontdek je zelf
+              nieuwe ideeën voor FODMAP-vriendelijke maaltijden. Samen maken we
+              het FODMAP-dieet toegankelijker, smaakvoller en leuker! Met onze
+              recepten heb je alles in handen om jouw FODMAP-dieet op een
+              creatieve en persoonlijke manier te volgen.
+            </p>
+            <p className="text-green-600 font-bold uppercase">
+              Voeg vandaag nog jouw eerste recept toe en begin met het opbouwen
+              van jouw eigen FODMAP-vriendelijke kookboek!
+            </p>
+          </div>
+        </div>
       </section>
 
       <section>

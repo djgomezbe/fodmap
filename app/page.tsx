@@ -9,9 +9,9 @@ import { Calendar } from "lucide-react";
 export default async function Home() {
   return (
     <>
-      <div className="mx-auto max-w-2xl py-32 text-white sm:py-48 lg:py-56">
+      <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-          <div className="relative rounded-full px-3 py-1 text-sm/6 text-white ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+          <div className="relative rounded-full px-3 py-1 text-sm/6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
             Onze app launched op 20 April 2025!.
             <a href="fodmap.html" className="font-semibold text-green-600">
               <span className="absolute inset-0" aria-hidden="true"></span>
@@ -21,8 +21,8 @@ export default async function Home() {
           </div>
         </div>
         <div className="text-center">
-          <h1 className="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl">
-            Jouw Partner in een Gezond FODMAP-dieet!
+          <h1 className="text-balance text-5xl font-semibold tracking-tight sm:text-7xl">
+            Jouw Partner tijdens een Gezond FODMAP-dieet!
           </h1>
           <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
             Heb je last van spijsverteringsproblemen of volg je een

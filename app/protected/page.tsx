@@ -26,7 +26,7 @@ export default async function ProtectedPage() {
                   Wat zijn FODMAPs?
                 </h2>
 
-                <p className="mt-4 text-gray-700">
+                <p className="mt-4">
                   Dit zijn een bepaalde groep koolhydraten die in veel
                   voedingsmiddelen voorkomen. Ze worden niet goed opgenomen door
                   de dunne darm, waardoor ze in de dikke darm terechtkomen, waar
@@ -37,13 +37,13 @@ export default async function ProtectedPage() {
             </div>
 
             <div>
-              <Image src="./fodmap.png" className="rounded" alt="" />
+              <Image src="/fodmap.png" alt="" width="400" height="400" />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-white">
+      <section>
         <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
           <h2 className="text-center text-4xl font-bold tracking-tight text-green-600 sm:text-5xl">
             Reviews van andere gebruikers:
@@ -103,7 +103,7 @@ export default async function ProtectedPage() {
                   </div>
 
                   <p className="mt-0.5 text-lg font-medium text-gray-900">
-                    Paul Starr
+                    GezondsheidsCoach
                   </p>
                 </div>
               </div>
@@ -169,7 +169,7 @@ export default async function ProtectedPage() {
                   </div>
 
                   <p className="mt-0.5 text-lg font-medium text-gray-900">
-                    Paul Starr
+                    Dietiste
                   </p>
                 </div>
               </div>
@@ -235,7 +235,7 @@ export default async function ProtectedPage() {
                   </div>
 
                   <p className="mt-0.5 text-lg font-medium text-gray-900">
-                    Paul Starr
+                    Klant
                   </p>
                 </div>
               </div>

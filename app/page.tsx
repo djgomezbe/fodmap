@@ -4,6 +4,7 @@ import SignUpUserSteps from "@/components/tutorial/sign-up-user-steps";
 import { hasEnvVars } from "@/utils/supabase/check-env-vars";
 import { Button } from "../components/ui/button";
 import Link from "next/link";
+import { Calendar } from "lucide-react";
 
 export default async function Home() {
   return (

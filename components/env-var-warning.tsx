@@ -6,7 +6,7 @@ export function EnvVarWarning() {
   return (
     <div className="flex gap-4 items-center">
       <Badge variant={"outline"} className="font-normal">
-        Supabase environment variables required
+        Create a profile to proceed
       </Badge>
       <div className="flex gap-2">
         <Button

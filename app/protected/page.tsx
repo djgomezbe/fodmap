@@ -17,7 +17,7 @@ export default async function ProtectedPage() {
 
   return (
     <main>
-      <section className="m-5 p-5">
+      <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
             <div>
@@ -25,7 +25,6 @@ export default async function ProtectedPage() {
                 <h2 className="text-2xl font-semibold text-green-600 sm:text-3xl">
                   Wat zijn FODMAPs?
                 </h2>
-
                 <p className="mt-4">
                   Dit zijn een bepaalde groep koolhydraten die in veel
                   voedingsmiddelen voorkomen. Ze worden niet goed opgenomen door
@@ -35,17 +34,21 @@ export default async function ProtectedPage() {
                 </p>
               </div>
             </div>
-
-            <div>
-              <Image src="/fodmap.png" alt="" width="400" height="400" />
+            <div className="align-center max-w-auto ml-auto mr-auto">
+              <Image
+                src="/images/vitamins.png"
+                alt=""
+                width="400"
+                height="400"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="flex max-w-screen justify-center text-center">
-        <div className="p-5 m-2">
-          <h1 className="text-xl font-semibold text-green-600 sm:text-3xl">
+      <section className="flex max-w-screen justify-center text-center align-center">
+        <div className="p-5 m-2 border-green-600 border-2 border-solid rounded-xl">
+          <h1 className="text-xl font-semibold text-green-600 sm:text-xl">
             Waarom Fodmap-Tracker Dé Keuze is voor Jouw Gezondheid
           </h1>
           <p>
@@ -53,80 +56,77 @@ export default async function ProtectedPage() {
             altijd nét iets mist? Ontdek waarom Fodmap Tracker een gamechanger
             is en jouw nieuwe bondgenoot kan worden in je FODMAP-traject:
           </p>
-          <ul className="text-green-600 uppercase">
+          <ul className="text-green-600 uppercase p-5 font-semibold">
             <li>Volledig Gepersonaliseerd</li>
             <li>Meer controle over je dieet</li>
             <li>Gebruiksvriendelijk</li>
             <li>Innovatieve features</li>
             <li>Betrouwbaarheid en zorg</li>
           </ul>
-          <p>
-            🌿 Stap vandaag nog over naar Fodmap Tracker en ervaar zelf waarom
-            zoveel mensen ons uniek noemen. Samen helpen we je klachten te
-            verminderen en je welzijn te verbeteren. Download nu en ontdek de
-            nieuwe standaard in FODMAP-dieetbegeleiding! Heb je vragen of wil je
-            meer weten? Laat het ons weten! 💚
-          </p>
+          <div className="align-center justify-center mt-5 bg-white text-black font-bold p-5 rounded-xl">
+            <p className=" border-green-600 border-2 border-solid rounded-xl p-2">
+              🌿 Stap vandaag nog over naar Fodmap Tracker en ervaar zelf waarom
+              zoveel mensen ons uniek noemen. Samen helpen we je klachten te
+              verminderen en je welzijn te verbeteren. Download nu en ontdek de
+              nieuwe standaard in FODMAP-dieetbegeleiding! Heb je vragen of wil
+              je meer weten? Laat het ons weten! 💚
+            </p>
+          </div>
         </div>
       </section>
 
-      <section className="text-center">
-        <div className="flex justify-start">
-          <div className="m-5 p-5">
-            <div className="m-5">
-              <h1 className="text-xl font-semibold text-green-600 uppercase">
-                Creëer en Deel Jouw Eigen FODMAP-vriendelijke recepten.
-              </h1>
-              <p>
-                Bij Fodmap-tracker geloven we dat een FODMAP-dieet niet saai of
-                beperkend hoeft te zijn. Daarom hebben we een speciale functie
-                ontwikkeld waarmee je zelf jouw favoriete FODMAP-vriendelijke
-                recepten kunt toevoegen, beheren en delen met anderen. Dit is
-                exclusief beschikbaar voor onze Premium gebruikers, zodat je
-                jouw dieet nog persoonlijker en smaakvoller kunt maken.
-              </p>
-            </div>
-            <div>
-              <h2 className="text-green-600 font-bold uppercase">
-                Zelf Recepten Toevoegen
-              </h2>
-              <p>
-                Ondanks onze unieke database van heerlijke recepten kun je
-                eenvoudig jouw eigen creaties toevoegen. Of het nu gaat om een
-                ontbijt, lunch, diner of een heerlijk tussendoortje.
-              </p>
-              <h2 className="text-green-600 font-bold uppercase m-2">
-                je kunt al jouw recepten opslaan en categoriseren op basis van
-                de fase van het FODMAP-dieet waarin je je bevindt
-              </h2>
-            </div>
-            <div>
-              <div>
-                <div>
-                  <ul className="font-bold p-5 m-5">
-                    <label className="text-green-600">Eleminatie-fase</label>
-                    <li>
-                      Voeg recepten toe die strikt laag in FODMAPs zijn, perfect
-                      voor de eerste fase van het dieet.
-                    </li>
-                    <label className="text-green-600">
-                      Herintroductie-fase
-                    </label>
-                    <li>
-                      Creëer recepten die specifiek zijn afgestemd op de
-                      FODMAP-categorie die je op dit moment test.
-                    </li>
-                    <label className="text-green-600">
-                      Personalisatie-fase
-                    </label>
-                    <li>
-                      Bewaar recepten die zijn afgestemd op jouw persoonlijke
-                      toleranties en voorkeuren.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+      <section>
+        <div className="text-white bg-green-600 p-1 rounded-xl text-center">
+          <div className="m-5">
+            <h1 className="text-xl font-semibold uppercase">
+              Creëer en Deel Jouw Eigen FODMAP-vriendelijke recepten.
+            </h1>
+            <p className="p-2">
+              Bij Fodmap-tracker geloven we dat een FODMAP-dieet niet saai of
+              beperkend hoeft te zijn. Daarom hebben we een speciale functie
+              ontwikkeld waarmee je zelf jouw favoriete FODMAP-vriendelijke
+              recepten kunt toevoegen, beheren en delen met anderen. Dit is
+              exclusief beschikbaar voor onze Premium gebruikers, zodat je jouw
+              dieet nog persoonlijker en smaakvoller kunt maken.
+            </p>
+          </div>
+          <div>
+            <h2 className="font-bold uppercase">Zelf Recepten Toevoegen</h2>
+            <p className="p-2">
+              Ondanks onze unieke database van heerlijke recepten kun je
+              eenvoudig jouw eigen creaties toevoegen. Of het nu gaat om een
+              ontbijt, lunch, diner of een heerlijk tussendoortje.
+            </p>
+            <h2 className="text-sm bg-white text-green-600 p-2 uppercase rounded-xl">
+              je kunt al jouw recepten opslaan en categoriseren op basis van de
+              fase van het FODMAP-dieet waarin je je bevindt
+            </h2>
+          </div>
+        </div>
+        <div></div>
+        <div>
+          <div>
+            <ul className="font-bold p-5 m-5">
+              <label className="text-green-600">Eleminatie-fase</label>
+              <li>
+                Voeg recepten toe die strikt laag in FODMAPs zijn, perfect voor
+                de eerste fase van het dieet.
+              </li>
+              <label className="text-green-600">Herintroductie-fase</label>
+              <li>
+                Creëer recepten die specifiek zijn afgestemd op de
+                FODMAP-categorie die je op dit moment test.
+              </li>
+              <label className="text-green-600">Personalisatie-fase</label>
+              <li>
+                Bewaar recepten die zijn afgestemd op jouw persoonlijke
+                toleranties en voorkeuren.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div>
             <h2 className="text-green-600 font-bold uppercase">
               Sorteer op FODMAP-categorie
             </h2>
@@ -137,8 +137,10 @@ export default async function ProtectedPage() {
               ingrediënten je aan het testen bent.{" "}
             </p>
           </div>
-          <div className="m-5 p-5">
-            <ul className="font-bold p-5 m-5">
+        </div>
+        <div>
+          <div>
+            <ul className="font-bold p-5">
               <label className="text-green-600 font-bold uppercase">
                 De categorieën zijn:
               </label>
@@ -149,6 +151,10 @@ export default async function ProtectedPage() {
               <li>Galacto-oligosacchariden</li>
               <li>Fructose</li>
             </ul>
+          </div>
+        </div>
+        <div>
+          <div>
             <h2 className="text-green-600 font-bold uppercase">
               Ingrediënt van de Week
             </h2>
@@ -161,6 +167,10 @@ export default async function ProtectedPage() {
               introduceert, kun je een heerlijke hummus of een
               kikkererwtensalade toevoegen aan jouw receptencollectie.
             </p>
+          </div>
+        </div>
+        <div>
+          <div>
             <h2 className="text-green-600 font-bold uppercase">
               Delen en Ontdekken
             </h2>
@@ -185,7 +195,6 @@ export default async function ProtectedPage() {
           <h2 className="text-center text-4xl font-bold tracking-tight text-green-600 sm:text-5xl">
             Reviews van andere gebruikers:
           </h2>
-
           <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
             <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
               <div className="flex items-center gap-4">

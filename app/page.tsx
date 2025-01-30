@@ -9,7 +9,7 @@ import { Calendar } from "lucide-react";
 export default async function Home() {
   return (
     <>
-      <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+      <div className="mx-auto max-w-2xl py-2 sm:py-2 lg:py-2">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           <div className="relative rounded-full px-3 py-1 text-sm/6 ring-1 ring-green-200 hover:ring-green-600">
             <p className="text-green-600">
@@ -27,14 +27,6 @@ export default async function Home() {
             eenvoudiger maakt om je dieet te beheren en je gezondheid te
             verbeteren.
           </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Button asChild size="sm" variant={"default"}>
-              <Link href="/sign-in">Sign in</Link>
-            </Button>
-            <Button asChild size="sm" variant={"default"}>
-              <Link href="/sign-up">Sign Up</Link>
-            </Button>
-          </div>
         </div>
       </div>
       <div

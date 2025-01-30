@@ -6,14 +6,13 @@ export function EnvVarWarning() {
   return (
     <div className="flex gap-4 items-center">
       <Badge variant={"outline"} className="font-normal">
-        Create a profile to proceed
+        Meld je aan om verder te gaan
       </Badge>
       <div className="flex gap-2">
         <Button
           asChild
           size="sm"
           variant={"outline"}
-          disabled
           className="opacity-75 cursor-none pointer-events-none"
         >
           <Link href="/sign-in">Sign in</Link>
@@ -22,7 +21,6 @@ export function EnvVarWarning() {
           asChild
           size="sm"
           variant={"default"}
-          disabled
           className="opacity-75 cursor-none pointer-events-none"
         >
           <Link href="/sign-up">Sign up</Link>

@@ -1,7 +1,7 @@
 import React from "react";
 
-const list = () => {
+const recipeCard = () => {
   return <div></div>;
 };
 
-export default list;
+export default recipeCard;

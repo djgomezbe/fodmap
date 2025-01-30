@@ -6,7 +6,7 @@ export default function DeployButton() {
     <>
       <Link href="/contact/">
         <Button className="flex items-center gap-2" size={"sm"}>
-          <span>Contact Us</span>
+          <span>Contacteer Ons</span>
         </Button>
       </Link>
     </>

@@ -15,7 +15,7 @@ export function EnvVarWarning() {
           variant={"outline"}
           className="opacity-75 cursor-none pointer-events-none"
         >
-          <Link href="/sign-in">Sign in</Link>
+          <Link href="/sign-in">Aanmelden</Link>
         </Button>
         <Button
           asChild
@@ -23,7 +23,7 @@ export function EnvVarWarning() {
           variant={"default"}
           className="opacity-75 cursor-none pointer-events-none"
         >
-          <Link href="/sign-up">Sign up</Link>
+          <Link href="/sign-up">Registreer</Link>
         </Button>
       </div>
     </div>

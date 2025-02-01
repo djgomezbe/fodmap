@@ -1,3 +1,30 @@
+#sidebar {
+  position: absolute;
+  top: 8vh;
+  left: 0;
+  height: 100vh;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#sidebar-item {
+  display: block;
+  width: 100%;
+  background-color: #43a047;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+}
+
+#sidebar-item:hover {
+  display: block;
+  width: 100%;
+  opacity: 90%;
+  background-color: #43a047;
+  padding: 5px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

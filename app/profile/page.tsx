@@ -1,8 +1,9 @@
 import { createClient } from "@/utils/supabase/server";
 import { redirect } from "next/navigation";
 import Hero from "@/components/hero";
+import Image from "next/image";
 
-export default async function ProtectedPage() {
+export default async function Profile() {
   const supabase = await createClient();
 
   const {
@@ -17,7 +18,15 @@ export default async function ProtectedPage() {
     <main>
       <div className="text-center">
         <Hero />
-        <h2>Hello World</h2>
+      </div>
+      <div className="w-full bg-green-600 text-white p-10">
+        <h2>Mijn Profiel</h2>
+        <Image
+          src="/images/happystomach.png"
+          width="200"
+          height="200"
+          alt="happy stomach"
+        />
       </div>
 
       <div className="border-solid border-2 border-green-600 m-5 p-10 rounded-xl text-center">

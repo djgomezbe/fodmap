@@ -2,6 +2,7 @@ import { createClient } from "@/utils/supabase/server";
 import { redirect } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import Hero from "@/components/hero";
 
 export default async function about() {
   const supabase = await createClient();
@@ -16,25 +17,7 @@ export default async function about() {
 
   return (
     <main>
-      <div>
-        <div id="sidebar">
-          <div id="sidebar-item" className="rounded-md">
-            <button>
-              <Link href="/recipes/">Recepten</Link>
-            </button>
-          </div>
-          <div id="sidebar-item" className="rounded-md">
-            <button>
-              <Link href="/about/">Over ons</Link>
-            </button>
-          </div>
-          <div id="sidebar-item" className="rounded-md">
-            <button>
-              <Link href="/editProfile/">Wijzig Profiel</Link>
-            </button>
-          </div>
-        </div>
-      </div>
+      <Hero />
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
@@ -93,16 +76,17 @@ export default async function about() {
         </div>
       </section>
 
-      <div id="gallery" className="relative w-full" data-carousel="slide">
+      <div
+        id="gallery"
+        className="relative w-full m-10 p-10"
+        data-carousel="slide"
+      >
         {/* Carousel wrapper */}
-        <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <div className="relative h-20 overflow-hidden rounded-lg md:h-96">
           {/* Item 1 */}
-          <div
-            className="hidden duration-700 ease-in-out"
-            data-carousel-item=""
-          >
+          <div className="duration-700 ease-in-out" data-carousel-item="">
             <img
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+              src="/images/fodmap.png"
               className="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               alt=""
             />
